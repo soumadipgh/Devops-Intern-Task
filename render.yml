@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: devops-intern-task
+    env: docker
+    plan: free
+    region: singapore
+    branch: main
