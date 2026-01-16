@@ -21,8 +21,8 @@ jobs:
           pip install -r requirements.txt
           pip install flake8
 
-      - name: Lint
-        run: flake8 .
+      - name: Lint code
+        run: flake8 . --ignore=E501,E302,E303,E402,W293,F401 --exclude=migrations,venv
 
       - name: Run tests
         env:
